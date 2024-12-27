@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .spiner2 {
+      flex:1 1 calc(50% - 10px);
+      background-color: #FF00DD;
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 25px solid #FF00DD;
+      animation: ani 2.5s linear infinite;
+    }
+
+
+    .spiner1 {
+      flex:1 1 calc(50% - 10px);
+      background-color: #0015FF;
+      height: 200px;
+      width:200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 25px solid 0015FF;
+      animation: ani 2.5s linear infinite;
+    }
+
+    @keyframes ani {
+      to {
+        transform: rotate(360deg);
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        align-items: center;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="spiner1">
+      <h2>Spinner</h2>
+    </div>
+    <div class="spiner2">
+      <h2>Spinner</h2>
+    </div>
+  </div>
+</body>
+
+</html>
